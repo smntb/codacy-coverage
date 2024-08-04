@@ -36,7 +36,7 @@ module Codacy
 
     def self.temp_dir
       directory_name = Dir.tmpdir + "/codacy-coverage/"
-      Dir.mkdir(directory_name) unless File.exists?(directory_name)
+      Dir.mkdir(directory_name) unless File.exist?(directory_name)
       directory_name
     end
 
